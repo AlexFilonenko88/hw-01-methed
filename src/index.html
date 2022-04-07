@@ -12,7 +12,7 @@
 <body>
 
 <section class=" library">
-    <header class="header library__header">
+    <header class="header header__library">
       <div class="container">
         <img src="img/logo.svg" alt="Логотип Big Brother">
 
@@ -139,9 +139,9 @@
 <section class="book">
   <header class="header library__header">
     <div class="container">
-      <button class="header__btn header__btn_back">назад</button>
+      <button class="header__btn header__btn_back" aria-label="назад">назад</button>
 
-      <button class="header__btn header__btn_delete">удалить</button>
+      <button class="header__btn header__btn_delete" aria-label="удалить">удалить</button>
     </div>
   </header>
 
@@ -180,14 +180,14 @@
 <section class="add">
   <header class="header add__header">
     <div class="container">
-      <button class="header__btn header__btn_back">назад</button>
+      <button class="header__btn header__btn_back" aria-label="назад">назад</button>
 
-      <button class="header__btn header__btn_search">поиск</button>
+      <button class="header__btn header__btn_search" aria-label="поиск">поиск</button>
     </div>
   </header>
 
   <form class="add__form">
-    <div class="container add_container">
+    <div class="container container__add">
       <fieldset class="add__fieldset">
         <legend class="add__title">Название и описание</legend>
 
@@ -272,7 +272,7 @@
       </fieldset>
 
       <div class="footer">
-        <button type="button" class="footer__btn add__btn">Далее</button>
+        <button type="button" class="footer__btn add__btn" aria-label="Далее">Далее</button>
       </div>
     </div>
   </form>
