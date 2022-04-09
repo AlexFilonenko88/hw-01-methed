@@ -175,7 +175,7 @@ const avif = () => gulp
 
 export const copy = () => gulp
   .src(path.src.assets, {
-    base: path.dist.base,
+    base: path.src.base,
   })
   .pipe(gulp.dest(path.dist.base))
   .pipe(browserSync.stream({

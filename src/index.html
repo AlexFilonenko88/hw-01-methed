@@ -2,8 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Big Brother - Моя библиотека</title>
   <link rel="stylesheet" href="css/index.css">
@@ -12,7 +11,7 @@
 <body>
 
 <section class=" library">
-    <header class="header header__library">
+    <header class="header library__header">
       <div class="container">
         <img src="img/logo.svg" alt="Логотип Big Brother">
 
@@ -82,7 +81,7 @@
             </div>
 
             <div class="cart__content">
-              <h3 class="cart__content"></h3>
+              <h3 class="cart__content">1984</h3>
 
               <p class="cart__author">Джордж Оруэлл</p>
 
@@ -137,7 +136,7 @@
 </section>
 
 <section class="book">
-  <header class="header library__header">
+  <header class="header book__header">
     <div class="container">
       <button class="header__btn header__btn_back" aria-label="назад">назад</button>
 
@@ -178,6 +177,7 @@
 </section>
 
 <section class="add">
+  <h2 class="visually-hidden">Добавить книгу</h2>
   <header class="header add__header">
     <div class="container">
       <button class="header__btn header__btn_back" aria-label="назад">назад</button>
@@ -187,7 +187,7 @@
   </header>
 
   <form class="add__form">
-    <div class="container container__add">
+    <div class="container add__container">
       <fieldset class="add__fieldset">
         <legend class="add__title">Название и описание</legend>
 
@@ -252,7 +252,7 @@
         <fieldset class="star">
           <legend>Поставить оценку</legend>
 
-          <div class="start__list">
+          <div class="star__list">
             <input type="radio" class="star__radio" id="star-rating-5" name="rating" value="5">
             <label class="star__icon" for="star-rating-5"></label>
 
