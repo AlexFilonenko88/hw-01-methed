@@ -5,7 +5,14 @@
 @import "default";
 
 
+@import "block/header";
+@import "block/library";
+@import "block/cart";
 
-body {
-  font-family: montserrat, sans-serif;
-}
+@import "block/footer";
+
+
+
+//body {
+//  font-family: montserrat, sans-serif;
+//}
