@@ -6,6 +6,8 @@ const book = document.querySelector("book");
 const add = document.querySelector("add");
 const addBtn = document.querySelectorAll('.header__btn-add, .library__add-btn');
 const backBtn = document.querySelector('.header__btn_back');
+const btnSearch = document.querySelectorAll(".header__btn_search");
+const search = document.querySelector(".search");
 
 
 const router = new Navigo('/', {
@@ -36,6 +38,23 @@ router.on({
 
 addBtns.forEach(btn => {
   btn.addEventListener('click', () =>{
-    router.navigate('add');
+    router.navigate('/');
+  })
+});
+
+
+const closeSearch = ({target}) => {
+  if(target.closest('.search, .header__btn_search')){
+    return;
+  }
+
+  search.classList.remove('search_active');
+  document.body.removeEventListener('click', closeSearch);
+};
+
+btnSearch.forEach(btn =>{
+  btn.addEventListener('click', () => {
+    search.classList.add('search_active');
+    document.body.addEventListener('click', closeSearch)
   })
 });

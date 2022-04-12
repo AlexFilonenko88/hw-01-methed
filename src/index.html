@@ -13,7 +13,7 @@
 <section class=" library">
     <header class="header library__header">
       <div class="container header__container">
-        <img class="header__logo" src="img/logo.svg" alt="Логотип Big Brother" width="61" height="40">
+        <img class="header__logo" src="img/logo.svg" alt="Логотип Big Brother">
 
         <button class="header__btn-add">Добавить книгу</button>
         <button class="header__btn header__btn_search">поиск</button>
@@ -30,7 +30,7 @@
     <div class="fields__block">
       <button class="fields__btn fields__btn_sort" aria-label="Иконка">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M3 18H9V16H3V18ZM3 6V8H21V6H3ZM3 13H15V11H3V13Z" fill="white"/>
+          <path d="M3 18H9V16H3V18ZM3 6V8H21V6H3ZM3 13H15V11H3V13Z" fill="currentColor"/>
         </svg>
         <span class="fields__text">По рейтингу</span>
       </button>
@@ -126,10 +126,66 @@
           </div>
         </a>
       </li>
+
+      <li class="library__item">
+        <a href="/book">
+          <artical class="cart">
+            <div class="cart__wrapper">
+              <img src="img/1984.jpg" alt="Обложка 1984" class="cart__image">
+
+              <p class="cart__label">хочу прочитать</p>
+            </div>
+
+            <div class="cart__content">
+              <h3 class="cart__content">1984</h3>
+
+              <p class="cart__author">Джордж Оруэлл</p>
+
+              <p class="cart__description">Главный герой — Уинстон Смит — живёт в Лондоне, работает в Министерстве правды и является...</p>
+
+              <div class="cart__rating">
+                <img class="cart__rating-start" src="img/star.svg" alt="Рейтинг 4 из 5">
+                <img class="cart__rating-start" src="img/star.svg" alt="">
+                <img class="cart__rating-start" src="img/star.svg" alt="">
+                <img class="cart__rating-start" src="img/star.svg" alt="">
+                <img class="cart__rating-start" src="img/star-o.svg" alt="">
+              </div>
+            </div>
+          </artical>
+        </a>
+      </li>
+
+      <li class="library__item">
+        <a href="/book" data-navigo>
+          <div class="cart">
+            <div class="cart__wrapper">
+              <img src="img/temp.jpg" alt="Обложка 1984" class="cart__image">
+
+              <p class="cart__label">хочу прочитать</p>
+            </div>
+
+            <div class="cart__content">
+              <h3 class="cart__content">Гарри Поттер и Философский камень</h3>
+
+              <p class="cart__author">Джоан Роулинг</p>
+
+              <p class="cart__description">Первый роман в серии книг про юного волшебника Гарри Поттера, написанный Дж. К. Роулинг. В нём...</p>
+
+              <div class="cart__rating">
+                <img class="cart__rating-start" src="img/star.svg" alt="Рейтинг 5 из 5">
+                <img class="cart__rating-start" src="img/star.svg" alt="">
+                <img class="cart__rating-start" src="img/star.svg" alt="">
+                <img class="cart__rating-start" src="img/star.svg" alt="">
+                <img class="cart__rating-start" src="img/star.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
     </ul>
   </div>
 
-  <footer class="footer">
+  <footer class="footer library__footer">
     <button class="footer__btn library__add-btn" aria-label="Добавить книгу">
       <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="22" cy="22" r="22" fill="currentColor"/>
@@ -144,9 +200,9 @@
 <section class="book hidden">
   <header class="header book__header">
     <div class="container header__container">
-      <button class="header__btn header__btn_back" aria-label="назад">назад</button>
+      <button class="header__btn header__btn_back" aria-label="назад"></button>
 
-      <button class="header__btn header__btn_delete" aria-label="удалить">удалить</button>
+      <button class="header__btn header__btn_delete" aria-label="удалить"></button>
     </div>
   </header>
 
@@ -154,7 +210,7 @@
     <div class="book__wrapper">
       <img class="book__image" src="img/1984.jpg" alt="Обложка 1984">
 
-      <button class="book__label">хочу прочитать</button>
+      <button class="book__label book__label_img">хочу прочитать</button>
     </div>
 
     <div class="book__content">
@@ -285,5 +341,19 @@
   </form>
 </section>
 
+<div class="search">
+  <div class="container">
+    <form class=" search__form">
+      <label>
+        <input class="search__input" type="search">
+      </label>
+      <button class="search__button">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z" fill="currentColor"/>
+        </svg>
+      </button>
+    </form>
+  </div>
+</div>
 </body>
 </html>

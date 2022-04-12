@@ -83,7 +83,7 @@ export const scss = () => gulp
   .pipe(gulpIf(!dev, autoprefixer(({
     cascade: false,
   }))))
-  .pipe(gulpIf(!dev, gcmq()))
+  .pipe(gcmq())
   .pipe(gulpIf(!dev, gulp.dest(path.dist.css)))
   .pipe(gulpIf(!dev, cleanCss({
     2: {
